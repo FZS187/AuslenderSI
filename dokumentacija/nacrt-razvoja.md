@@ -8,7 +8,7 @@ Projekt bomo razvijali v štirih fazah. Prva faza pokriva začetne naloge v GitH
 
 | Član ekipe | Področje | Odgovornosti in začetni rezultati |
 | --- | --- | --- |
-| **Lola Novaković** | Frontend in uporabniška izkušnja | Pripravi diagram primerov uporabe ali opise ključnih uporabniških scenarijev ([#1](https://github.com/FZS187/AuslenderSI/issues/1)). Oblikuje makete ali prototip za izbiro postopka, vodič, seznam dokumentov in AI asistenta ter pokaže navigacijo med zasloni ([#2](https://github.com/FZS187/AuslenderSI/issues/2)). Na podlagi maket izdela uporabniški vmesnik v Flutterju. |
+| **Lola Novaković** | Frontend in uporabniška izkušnja | Pripravi diagram primerov uporabe ali opise ključnih uporabniških scenarijev ([#1](https://github.com/FZS187/AuslenderSI/issues/1)). Oblikuje makete ali prototip za izbiro postopka, vodič, seznam dokumentov in AI asistenta ter pokaže navigacijo med zasloni ([#2](https://github.com/FZS187/AuslenderSI/issues/2)). Na podlagi maket izdela uporabniški vmesnik z Reactom. |
 | **Veljko Stojanović** | Backend, podatkovna baza in dokumentacija | Opiše ciljne uporabnike, obseg projekta in glavne funkcionalnosti ([#3](https://github.com/FZS187/AuslenderSI/issues/3)). Pripravi podatkovni model, arhitekturo in pregled predvidenih tehnologij ([#4](https://github.com/FZS187/AuslenderSI/issues/4)). Uredi povezave iz README-ja do dokumentacije v mapi `dokumentacija/` ([#5](https://github.com/FZS187/AuslenderSI/issues/5)). V nadaljevanju pripravi prijavo, podatke za vodiče in shranjevanje napredka. |
 | **Filip Sekulović** | AI in GitHub | Uredi začetno strukturo repozitorija in način sodelovanja ([#6](https://github.com/FZS187/AuslenderSI/issues/6)), preveri dostop ekipe in asistenta pri predmetu ([#7](https://github.com/FZS187/AuslenderSI/issues/7)), uredi začetne Issues ([#8](https://github.com/FZS187/AuslenderSI/issues/8)), pripravi načrt razvoja ([#9](https://github.com/FZS187/AuslenderSI/issues/9)) ter vzpostavi GitHub Actions ([#10](https://github.com/FZS187/AuslenderSI/issues/10)). V nadaljevanju razvije AI asistenta in preveri kakovost odgovorov ter navedb virov. |
 
@@ -22,7 +22,7 @@ Lola opiše ključne uporabniške scenarije in jih uporabi pri pripravi maket. V
 
 ### 2. Prvi delujoči postopek
 
-Ekipa izbere en postopek iz README-ja in zanj zbere uradne vire ter pripravi korake in seznam dokumentov. Veljko omogoči prijavo, branje vodiča in shranjevanje napredka. Lola izdela pot od izbire postopka do vodiča in seznama dokumentov. Filip po vzpostavitvi projekta Flutter doda `flutter analyze`, preverjanje `flutter test` pa vključi, ko so na voljo testi.
+Ekipa izbere en postopek iz README-ja in zanj zbere uradne vire ter pripravi korake in seznam dokumentov. Veljko omogoči prijavo, branje vodiča in shranjevanje napredka. Lola izdela pot od izbire postopka do vodiča in seznama dokumentov. Filip po vzpostavitvi projekta React v GitHub Actions doda preverjanje kode z `npm run lint`. Izvajanje testov vključi, ko so na voljo.
 
 **Rezultat faze** je delujoč tok, v katerem se uporabnik prijavi, izbere postopek, odpre uradni vir, označi opravljen korak in po ponovnem odprtju aplikacije vidi shranjeni napredek.
 
@@ -43,7 +43,7 @@ Ekipa po potrditvi prvega postopka doda še preostale postopke iz dogovorjenega 
 | Pred začetkom dela | Kaj to omogoči |
 | --- | --- |
 | Dogovor o obsegu in ključnih uporabniških scenarijih ([#3](https://github.com/FZS187/AuslenderSI/issues/3), [#1](https://github.com/FZS187/AuslenderSI/issues/1)) | Lola lahko dokonča makete ([#2](https://github.com/FZS187/AuslenderSI/issues/2)), Veljko pa uskladi podatkovni model ([#4](https://github.com/FZS187/AuslenderSI/issues/4)). Začetne osnutke lahko pripravljata vzporedno. |
-| Začetna struktura in dostopi ([#6](https://github.com/FZS187/AuslenderSI/issues/6), [#7](https://github.com/FZS187/AuslenderSI/issues/7)) | Člani lahko samostojno odpirajo veje in oddajajo pull requeste. Osnovna preverjanja se lahko uvedejo že pred pripravo projekta Flutter ([#10](https://github.com/FZS187/AuslenderSI/issues/10)). |
+| Začetna struktura in dostopi ([#6](https://github.com/FZS187/AuslenderSI/issues/6), [#7](https://github.com/FZS187/AuslenderSI/issues/7)) | Člani lahko samostojno odpirajo veje in oddajajo pull requeste. Osnovna preverjanja se lahko uvedejo že pred pripravo projekta React ([#10](https://github.com/FZS187/AuslenderSI/issues/10)). |
 | Dogovor o podatkih med aplikacijo in zaledjem | Lola lahko poveže zaslone z vodičem in shranjevanjem napredka. Veljko in Lola se dogovorita o podatkih, potrebnih za prikaz in označevanje korakov. |
 | Prvi vodič s preverjenimi viri in dogovorjen format odgovora | Filip lahko preveri odgovore za ta postopek, Lola pa poveže prikaz odgovora in virov z AI storitvijo. |
 | Uspešen preizkus prvega postopka od prijave do shranjenega napredka in odgovora AI | Ekipa lahko isti način izvedbe uporabi pri preostalih postopkih. |
